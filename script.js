@@ -1,16 +1,15 @@
 var input = document.querySelector("#input")
-var btn = document.querySelector("#bta-translate")
+var btn = document.querySelector("#btn-translate")
 var output = document.querySelector("#output")
 
-var serverURL = "";
+var serverURL = "https://api.funtranslations.com/translate/valyrian.json";
 
 function getTranslationURL(text){
     return serverURL + "?" + "text=" + text;
 }
 
 function errorHandler(error){
-    output.innerText = "Error, please try again later"
-
+    alert("An unexpected error was caught !");
 }
 
 function clickHandler(){

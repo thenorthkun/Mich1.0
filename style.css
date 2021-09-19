@@ -1,18 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
 body{
     text-align: center;
     display: block;
+    font-family: 'Slabo 27px', serif;
+    
+}
+
+h1{
+    font-size: 45px;
+}
+
+#container {
+    background-color: rgba(162, 213, 226, 0.7);
+    width: 95%;
+    max-width: 600px;
+    margin: auto;
+    padding: 0.9rem 0rem;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px #003e76;
+    align-items: center;
 }
 
 #input{
-    width: 50%;
+    width: 40%;
     height: 10vh;
-    margin: 1rem;
+    margin: auto;
     padding: 1rem;
+    border-radius: 0.7rem;
 }
 
 #output{
+    margin: auto;
+    width: 40%;
     height: 10vh;
-    margin: 1rem;
     padding: 1rem;
+    border-radius: 0.7rem;
+
     border: 1px solid black;
+}
+
+#btn-translate{
+    padding: 0.4rem;
+    padding: 12px 35px;
 }
