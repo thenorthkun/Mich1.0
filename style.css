@@ -23,7 +23,8 @@ h1{
 }
 
 #input{
-    width: 40%;
+    font-size: 17px;
+    width: 60%;
     height: 10vh;
     margin: auto;
     padding: 1rem;
@@ -31,8 +32,9 @@ h1{
 }
 
 #output{
+    font-size: 17px;
     margin: auto;
-    width: 40%;
+    width: 60%;
     height: 10vh;
     padding: 1rem;
     border-radius: 0.7rem;
