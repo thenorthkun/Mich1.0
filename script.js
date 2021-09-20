@@ -6,11 +6,13 @@ var serverURL = "https://api.funtranslations.com/translate/valyrian.json";
 
 function getTranslationURL(text){
     return serverURL + "?" + "text=" + text;
+    
 }
 
 function errorHandler(error){
-    alert("An unexpected error was caught !");
+    alert("error occured")
 }
+
 
 function clickHandler(){
     var inputText = input.value;
@@ -20,9 +22,8 @@ function clickHandler(){
         var outputText = json.contents.translated;
         output.innerText = outputText;
     })
-    .catch(errorHandler)
-    
 
+    .catch(errorHandler)
 }
 
 btn.addEventListener("click", clickHandler)
