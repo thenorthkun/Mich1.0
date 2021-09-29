@@ -9,21 +9,23 @@ function getTranslationURL(text){
     
 }
 
-function errorHandler(error){
-    alert("error occured")
-}
-
 
 function clickHandler(){
     var inputText = input.value;
     fetch(getTranslationURL(inputText))
     .then(response => response.json())
     .then(json => {
+        if(json.error) throw json.error.message;
         var outputText = json.contents.translated;
         output.innerText = outputText;
     })
 
     .catch(errorHandler)
+}
+
+function errorHandler(error){
+    output.innerText = error
+    // console.log(error);
 }
 
 btn.addEventListener("click", clickHandler)
